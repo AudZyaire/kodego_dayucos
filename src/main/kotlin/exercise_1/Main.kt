@@ -1,15 +1,16 @@
 package exercise_1
 
-
+class Main {
+}
     fun main() {
 
-       /* var fName:String?=null
+        /* var fName:String?=null
         var lName:String?=null
         var mName:String?=null */
-        var age:String
+        var age: String
         //Ask user for input
 
-        do{
+        do {
             println("--------APPLICATION FOR EMPLOYMENT--------")
             print("Position You're Applying For: ")
             var position = readln()
@@ -26,7 +27,7 @@ package exercise_1
             var lName = readLine()
             print("Middle Name: ")
             var mName = readLine()
-        } while(fName== "" || lName == "" || mName == "")
+        } while (fName == "" || lName == "" || mName == "")
         /*print("Age: ")
         age = readln()
         if (age.toIntOrNull()!= null)
@@ -41,8 +42,7 @@ package exercise_1
         val agerange = 0..17
         if ((age.toInt() in agerange) == true) { //check if user input age is within the agerange
             print("You need to be 18+ to be able to apply")
-        }
-        else //if age is not in range do the rest of the application form
+        } else //if age is not in range do the rest of the application form
         {
             do {
                 println("-----Mailing Address-----")
@@ -54,8 +54,8 @@ package exercise_1
                 var state = readLine()
                 print("Enter Zip: ")
                 var zip = readLine()
-            }while(address == "" || city == "" || state == "" || zip == "")
-            do{
+            } while (address == "" || city == "" || state == "" || zip == "")
+            do {
                 println("-----Contact Information-----")
                 print("Enter Home Phone: ")
                 var homePhone = readLine()
@@ -65,16 +65,16 @@ package exercise_1
                 var email = readLine()
                 print("Enter Social Security Number: ")
                 var sss = readLine()
-            } while (homePhone== "" || cellPhone=="" || email == "" || sss == "")
-            do{
+            } while (homePhone == "" || cellPhone == "" || email == "" || sss == "")
+            do {
                 print("Have you ever been convicted of a felony?: Y or N: ")
-                var convict:String? = readLine()
-                println (convict!!.uppercase())
-            } while ((convict!!.uppercase() != "Y") and  (convict!!.uppercase() != "N"))
-            do{
+                var convict: String? = readLine()
+                println(convict!!.uppercase())
+            } while ((convict!!.uppercase() != "Y") and (convict!!.uppercase() != "N"))
+            do {
                 print("If selected for employment are you willing to submit to a pre-employment drug screening test? Y or N: ")
-                var drugTest:String? = readln()
-            }while ((drugTest?.uppercase()!="Y") and (drugTest?.uppercase()!="N"))
+                var drugTest: String? = readln()
+            } while ((drugTest?.uppercase() != "Y") and (drugTest?.uppercase() != "N"))
 
 
             do {
@@ -93,7 +93,6 @@ package exercise_1
             } while (school == "" || schoolLocation == "" || yearsAttended == "" || degree == "" || major == "")
             println("Thanks for applying, expect a call or an email from us for an interview")
         }
-
 
 
     }
