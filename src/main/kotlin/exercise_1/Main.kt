@@ -1,6 +1,6 @@
 package exercise_1
 
-class Main {
+class Main  {
 }
     fun main() {
 
