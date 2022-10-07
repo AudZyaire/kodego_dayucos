@@ -1,7 +1,5 @@
 package exercise_1
 
-class Main  {
-}
     fun main() {
         var positionApply:String? = null
         var dateAvailForWork:String? = null
