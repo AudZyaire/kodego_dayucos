@@ -3,10 +3,44 @@ package exercise_1
 class Main  {
 }
     fun main() {
+        var positionApply:String? = null
+        var dateAvailForWork:String? = null
+        var desiredSalary:Int? = null
+        var lastName:String? = null
+        var firstName:String? = null
+        var middleName:String? = null
+        var age:Int? = null
+        var birthDate:String? = null
+        var address:String? = null
+        var city:String? = null
+        var state:String? = null
+        var zip:String? = null
+        var homePhone:String? = null
+        var cellPhone:String? = null
+        var emailAddress:String? = null
+        var socialSecurityNumber:String? = null
+        var usCitizen:Boolean? = null
+        var convictedOfAFelony:Boolean? = null
+        var submitDrugScreen:Boolean? = null
+        var schoolName1:String? = null
+        var schoolLocation1:String? = null
+        var yearsAttended1:Int? = null
+        var degreeReceived1:String? = null
+        var major1:String? = null
+        var schoolName2:String? = null
+        var schoolLocation2:String? = null
+        var yearsAttended2:Int? = null
+        var degreeReceived2:String? = null
+        var major2:String? = null
+        var schoolName3:String? = null
+        var schoolLocation3:String? = null
+        var yearsAttended3:Int? = null
+        var degreeReceived3:String? = null
+        var major3:String? = null
 
-        /* var fName:String?=null
-        var lName:String?=null
-        var mName:String?=null */
+
+
+/*
         var age: String
         //Ask user for input
 
@@ -28,12 +62,7 @@ class Main  {
             print("Middle Name: ")
             var mName = readLine()
         } while (fName == "" || lName == "" || mName == "")
-        /*print("Age: ")
-        age = readln()
-        if (age.toIntOrNull()!= null)
-            print("It's a number! ")
-        else
-            print("Not a number") */
+
         do {
             println("-----Enter a valid number-----")
             print("Age: ")
@@ -93,7 +122,6 @@ class Main  {
             } while (school == "" || schoolLocation == "" || yearsAttended == "" || degree == "" || major == "")
             println("Thanks for applying, expect a call or an email from us for an interview")
         }
-
-
+        */
     }
 

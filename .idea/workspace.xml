@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="056060c9-081c-42d7-8e24-c5f1b124636d" name="Changes" comment="added exercise 1 package&#10;added Main.kt in exercise_1">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="056060c9-081c-42d7-8e24-c5f1b124636d" name="Changes" comment="added class Main">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/exercise_1/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/exercise_1/Main.kt" afterDir="false" />
     </list>
@@ -93,7 +92,28 @@
       <option name="project" value="LOCAL" />
       <updated>1665123363366</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added exercise 1 package&#10;added Main.kt in exercise_1">
+      <created>1665142420962</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1665142420962</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added exercise 1 package&#10;added Main.kt in exercise_1">
+      <created>1665142588902</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1665142588902</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added class Main">
+      <created>1665142728582</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1665142728582</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -110,6 +130,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="added exercise 1 package&#10;added Main.kt in exercise_1" />
-    <option name="LAST_COMMIT_MESSAGE" value="added exercise 1 package&#10;added Main.kt in exercise_1" />
+    <MESSAGE value="added class Main" />
+    <option name="LAST_COMMIT_MESSAGE" value="added class Main" />
   </component>
 </project>
