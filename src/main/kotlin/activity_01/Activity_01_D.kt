@@ -1,3 +1,5 @@
+import kotlin.system.exitProcess
+
 /* Create an application that will accept 5 monetary amounts.
 After the input is done, the user will be asked “Divide the value by how many?”. It will only accept an Integer as input.
 The total of the 5  input will be divided by the answer in the second question input.
@@ -10,38 +12,29 @@ fun main() {
     var amount5:String? = null
     var totalAmount:Int? = null
     var divideBy:String? = null
-    var dividedAnswer:Int? = null
+    var dividedAnswer:Double? = null
 
     println("Int values only or program will exit.")
     print("1. Input money: ")
     amount1 = readln()
-    if (amount1.toIntOrNull() == null) {
-        println("You entered $amount1, program will exit now. ")
-    }
+    //checking if value is Int
     print("2. Input money: ")
     amount2 = readln()
-    if (amount2.toIntOrNull() == null) {
-        println("You entered $amount2, program will exit now. ")
-    }
     print("3. Input money: ")
     amount3 = readln()
-    if (amount3.toIntOrNull() == null) {
-        println("You entered $amount3, program will exit now. ")
-    }
     print("4. Input money: ")
     amount4 = readln()
-    if (amount4.toIntOrNull() == null) {
-        println("You entered $amount4, program will exit now. ")
-    }
     print("5. Input money: ")
     amount5 = readln()
-    if (amount5.toIntOrNull() == null) {
-        println("You entered $amount5, program will exit now. ")
+
+    if (amount1.toIntOrNull() == null || amount2.toIntOrNull() == null || amount3.toIntOrNull() == null || amount4.toIntOrNull() == null || amount5.toIntOrNull() == null) {
+        println("You entered an invalid value, program will exit now. ")
+    } else {
+        totalAmount = amount1.toInt() + amount2.toInt() + amount3.toInt() + amount4.toInt() + amount5.toInt()
+        println("Sum of the amount you entered is: $totalAmount")
+        print("Divide the value by how many?: ")
+        divideBy = readln()
+        dividedAnswer = totalAmount / divideBy.toDouble()
+        println("$totalAmount divided by $divideBy is: $dividedAnswer")
     }
-    totalAmount = amount1.toInt() + amount2.toInt() + amount3.toInt() + amount4.toInt() + amount5.toInt()
-    println("Sum of the amount you entered is: $totalAmount")
-    print("Divide the value by how many?: ")
-    divideBy = readln()
-    dividedAnswer = totalAmount / divideBy.toInt()
-    println("$totalAmount divided by $divideBy is: $divideBy")
 }
