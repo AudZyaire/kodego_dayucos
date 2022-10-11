@@ -40,7 +40,7 @@ fun main() {
     }
     totalAmount = amount1.toInt() + amount2.toInt() + amount3.toInt() + amount4.toInt() + amount5.toInt()
     println("Sum of the amount you entered is: $totalAmount")
-    print("Divide the sum by: ")
+    print("Divide the value by how many?: ")
     divideBy = readln()
     dividedAnswer = totalAmount / divideBy.toInt()
     println("$totalAmount divided by $divideBy is: $divideBy")
