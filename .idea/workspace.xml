@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="056060c9-081c-42d7-8e24-c5f1b124636d" name="Changes" comment="revised the code, reduced it to just declaring variables" />
+    <list default="true" id="056060c9-081c-42d7-8e24-c5f1b124636d" name="Changes" comment="Added Activity 01 A-D">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/activity_01/Activity_01_D.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/activity_01/Activity_01_D.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,18 +37,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "F:/JoniKotlin/kodego_dayucos"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Kodego\Kotlin\KodeGoExercises_Dayucos\src\main\kotlin" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Kotlin.Activity_01_DKt">
+    <configuration name="Activity_01_DKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Activity_01_DKt" />
+      <module name="KodeGoExercises_Dayucos.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IfSampleKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="IfSampleKt" />
+      <module name="KodeGoExercises_Dayucos.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="exercise_1.MainKt" />
       <module name="KodeGoExercises_Dayucos.main" />
@@ -53,8 +72,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UnaryOperationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="UnaryOperationKt" />
+      <module name="KodeGoExercises_Dayucos.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.Activity_01_DKt" />
+        <item itemvalue="Kotlin.UnaryOperationKt" />
+        <item itemvalue="Kotlin.IfSampleKt" />
         <item itemvalue="Kotlin.MainKt" />
       </list>
     </recent_temporary>
@@ -117,7 +146,28 @@
       <option name="project" value="LOCAL" />
       <updated>1665146570897</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added kodego class sample code package">
+      <created>1665476917815</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1665476917815</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added Activity 01 A-D">
+      <created>1665479131484</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1665479131484</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added Activity 01 A-D">
+      <created>1665479220852</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1665479220852</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -136,6 +186,8 @@
     <MESSAGE value="added exercise 1 package&#10;added Main.kt in exercise_1" />
     <MESSAGE value="added class Main" />
     <MESSAGE value="revised the code, reduced it to just declaring variables" />
-    <option name="LAST_COMMIT_MESSAGE" value="revised the code, reduced it to just declaring variables" />
+    <MESSAGE value="Added kodego class sample code package" />
+    <MESSAGE value="Added Activity 01 A-D" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Activity 01 A-D" />
   </component>
 </project>
