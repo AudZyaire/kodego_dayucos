@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="056060c9-081c-42d7-8e24-c5f1b124636d" name="Changes" comment="Added Activity 01 A-D">
+    <list default="true" id="056060c9-081c-42d7-8e24-c5f1b124636d" name="Changes" comment="Enhanced Activity_01_D.kt code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/activity_01/Activity_01_D.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/activity_01/Activity_01_D.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665479220852</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Enhanced Activity_01_D.kt code">
+      <created>1665480060343</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1665480060343</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -188,6 +194,7 @@
     <MESSAGE value="revised the code, reduced it to just declaring variables" />
     <MESSAGE value="Added kodego class sample code package" />
     <MESSAGE value="Added Activity 01 A-D" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Activity 01 A-D" />
+    <MESSAGE value="Enhanced Activity_01_D.kt code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Enhanced Activity_01_D.kt code" />
   </component>
 </project>
