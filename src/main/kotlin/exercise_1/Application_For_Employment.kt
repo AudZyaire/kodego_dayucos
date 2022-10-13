@@ -1,9 +1,15 @@
 package exercise_1
+import java.time.LocalDate
+import java.time.Month
+import java.time.format.DateTimeFormatter
+import java.util.Date
 
     fun main() {
         var positionApply:String? = null
-        var dateAvailForWork:String? = null
-        var desiredSalary:Int? = null
+        var dateAvailForWork = LocalDate.parse("")
+        var dateFormatter = DateTimeFormatter.ofPattern("MM-dd-yyyy")
+        var formattedWorkStartDate = dateAvailForWork.format(dateFormatter)
+        var desiredSalary:Double? = null
         var lastName:String? = null
         var firstName:String? = null
         var middleName:String? = null

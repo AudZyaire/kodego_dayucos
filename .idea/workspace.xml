@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="056060c9-081c-42d7-8e24-c5f1b124636d" name="Changes" comment="Updated Activity_01_D code">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/kodego_class_samples/Repeat.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/kodego_class_samples/WhenAndIf.kt" afterDir="false" />
+    <list default="true" id="056060c9-081c-42d7-8e24-c5f1b124636d" name="Changes" comment="Added files made from class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/activity_01/Activity_01_D.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/activity_01/Activity_01_D.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/exercise_1/Application_For_Employment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/exercise_1/Application_For_Employment.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +182,21 @@
       <option name="project" value="LOCAL" />
       <updated>1665488266854</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added files made from class">
+      <created>1665659160956</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1665659160956</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added files made from class">
+      <created>1665659321643</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1665659321643</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -206,6 +218,7 @@
     <MESSAGE value="Added kodego class sample code package" />
     <MESSAGE value="Added Activity 01 A-D" />
     <MESSAGE value="removed class Main" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed class Main" />
+    <MESSAGE value="Added files made from class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added files made from class" />
   </component>
 </project>
