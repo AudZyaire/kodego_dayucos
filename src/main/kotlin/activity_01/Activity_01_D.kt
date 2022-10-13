@@ -15,7 +15,6 @@ fun main() {
     println("Int values only or program will exit.")
     print("1. Input money: ")
     amount1 = readln()
-    //checking if value is Int
     print("2. Input money: ")
     amount2 = readln()
     print("3. Input money: ")
