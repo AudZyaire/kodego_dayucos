@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="056060c9-081c-42d7-8e24-c5f1b124636d" name="Changes" comment="Changed activity directory" />
+    <list default="true" id="056060c9-081c-42d7-8e24-c5f1b124636d" name="Changes" comment="Changed activity directory">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Activity_01_B/Activity_01_B.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Activity_01_B/Activity_01_B.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Activity_01_D/Activity_01_D.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Activity_01_D/Activity_01_D.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,10 +51,14 @@
       <recent name="D:\Kodego\Kotlin\KodeGoExercises_Dayucos\src\main\kotlin" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="Activity_01_D" />
+      <recent name="Activity_01_C" />
+      <recent name="Activity_01_B" />
+      <recent name="Activity_01_A" />
       <recent name="exercise_1" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.RepeatKt">
+  <component name="RunManager" selected="Kotlin.Activity_01_DKt">
     <configuration name="Activity_01_DKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Activity_01_DKt" />
       <module name="KodeGoExercises_Dayucos.main" />
@@ -88,9 +96,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.Activity_01_DKt" />
         <item itemvalue="Kotlin.RepeatKt" />
         <item itemvalue="Kotlin.WhenAndIfKt" />
-        <item itemvalue="Kotlin.Activity_01_DKt" />
         <item itemvalue="Kotlin.UnaryOperationKt" />
         <item itemvalue="Kotlin.IfSampleKt" />
       </list>
@@ -203,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665660070892</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Changed activity directory">
+      <created>1665661081473</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1665661081473</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

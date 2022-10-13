@@ -1,3 +1,5 @@
+import java.util.Date
+
 fun main() {
     /*
     ---Activity 01 - B---
@@ -73,15 +75,15 @@ D. Musical Instruments
     var bookIdNumber: Int
     var bookAuthor: String
     var bookTitle: String
-    var publicationDate: String
+    var publicationDate: Date
     var bookCategory: String
     var totalQuantityOfBook: Int
     var isBorrowed:Boolean
     var quantityBorrowedBook: Int
     var borrowerNameBook: String
     var borrowerIdNumberBook: Int
-    var borrowedDateBook: String
-    var dateNeedToBeReturnedBook: String
+    var borrowedDateBook: Date
+    var dateNeedToBeReturnedBook: Date
     var quantityInLibraryBook: Int
     var bookAisle: String
     var dateAcquiredBook: String
