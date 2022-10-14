@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="056060c9-081c-42d7-8e24-c5f1b124636d" name="Changes" comment="Changed activity directory">
+    <list default="true" id="056060c9-081c-42d7-8e24-c5f1b124636d" name="Changes" comment="Enhanced Activities 01B and 01D's code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Activity_01_B/Activity_01_B.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Activity_01_B/Activity_01_B.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Activity_01_D/Activity_01_D.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Activity_01_D/Activity_01_D.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -218,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665661081473</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Enhanced Activities 01B and 01D's code">
+      <created>1665666926506</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1665666926506</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -242,6 +248,7 @@
     <MESSAGE value="removed class Main" />
     <MESSAGE value="Added files made from class" />
     <MESSAGE value="Changed activity directory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed activity directory" />
+    <MESSAGE value="Enhanced Activities 01B and 01D's code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Enhanced Activities 01B and 01D's code" />
   </component>
 </project>

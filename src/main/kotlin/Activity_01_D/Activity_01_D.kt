@@ -1,8 +1,4 @@
-import kotlin.math.roundToInt
-import kotlin.math.roundToLong
-import kotlin.system.exitProcess
-import kotlin.text.toInt
-import kotlin.text.toInt as toInt1
+
 
 /* Create an application that will accept 5 monetary amounts.
 After the input is done, the user will be asked “Divide the value by how many?”. It will only accept an Integer as input.
@@ -31,7 +27,6 @@ fun main() {
     } while (counter < 6 && money?.toIntOrNull() != null)
 
     if (continueTheProgram == true) {
-        println()
         print("Divide $moneySum by?: ")
         divideBy = readln()
         quotient = moneySum / divideBy.toDouble()
