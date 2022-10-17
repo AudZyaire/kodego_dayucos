@@ -22,7 +22,7 @@ fun main() {
         money = readln()
 
         if (money?.toDoubleOrNull() == null) {
-            logger.warn { "You entered an invalid number, program will exit now." }
+            logger.error { "You entered an invalid number, program will exit now." }
             continueTheProgram = false //assign false to be used as exit code below if input is not a number
         } else {
             moneySum += money.toDouble()
@@ -48,6 +48,6 @@ fun main() {
         logger.info { "$moneySum divided by $divideBy is equal to ${quotientRound}"}
 
     } else {
-        logger.warn { "---------------------Program End---------------------" }
+        logger.error { "---------------------Program End---------------------" }
     }
 }

@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="056060c9-081c-42d7-8e24-c5f1b124636d" name="Changes" comment="Enhanced Activity_01 A,B,C,D code" />
+    <list default="true" id="056060c9-081c-42d7-8e24-c5f1b124636d" name="Changes" comment="Enhanced Activity_01 A,B,C,D code">
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Activity_01_D/Activity_01_D.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Activity_01_D/Activity_01_D.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -236,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665983783394</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Enhanced Activity_01 A,B,C,D code">
+      <created>1665983932469</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1665983932469</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
