@@ -31,7 +31,7 @@ fun main() {
         print("Divide $moneySum by?: ")
         divideBy = readln()
         quotient = moneySum / divideBy.toDouble()
-        print("$moneySum divided by $divideBy is equal to $quotient")
+        logger.info { "$moneySum divided by $divideBy is equal to $quotient"}
     } else {
         println("Bye~")
     }
