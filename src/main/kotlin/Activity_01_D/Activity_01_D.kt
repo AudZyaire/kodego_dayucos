@@ -8,6 +8,7 @@ After the input is done, the user will be asked “Divide the value by how many?
 The total of the 5  input will be divided by the answer in the second question input.
 Note: Error checking must be done. */
 fun main() {
+
     var counter: Int = 1
     var money: String? = null
     var moneySum: Double = 0.0

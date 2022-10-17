@@ -1,6 +1,7 @@
 import java.util.*
 
 fun main() {
+
     /*
     Activity 01 - C
 You are tasked to automate an inventory system for a grocery.

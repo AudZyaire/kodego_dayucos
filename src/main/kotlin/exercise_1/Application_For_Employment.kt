@@ -5,6 +5,7 @@ import java.time.format.DateTimeFormatter
 import java.util.Date
 
     fun main() {
+
         var positionApply:String? = null
         var dateAvailForWork = LocalDate.parse("")
         var dateFormatter = DateTimeFormatter.ofPattern("MM-dd-yyyy")
