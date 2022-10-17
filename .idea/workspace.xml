@@ -6,11 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="056060c9-081c-42d7-8e24-c5f1b124636d" name="Changes" comment="Enhanced Activity_01_D.kt code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/kodego_class_samples/Repeat.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/kodego_class_samples/UnaryOperation.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/kodego_class_samples/WhenAndIf.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/kodego_class_samples/ifSample.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Activity_01_A/Activity_01_A.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Activity_01_A/Activity_01_A.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Activity_01_B/Activity_01_B.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Activity_01_B/Activity_01_B.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Activity_01_C/Activity_01_C.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Activity_01_C/Activity_01_C.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Activity_01_D/Activity_01_D.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Activity_01_D/Activity_01_D.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,14 +40,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "D:/Kodego/Kotlin/KodeGoClass/src/main/kotlin"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Kodego/Kotlin/KodeGoClass/src/main/kotlin&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Kodego\Kotlin\KodeGoClass\src\main\kotlin" />
