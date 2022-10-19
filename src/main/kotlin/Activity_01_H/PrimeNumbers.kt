@@ -15,6 +15,8 @@ fun main() {
     first = readln()
     logger.info { "Enter Second Number: " }
     second = readln()
+
+    //determining which is lower and higher number
     if (first > second) {
         higherNum = first.toInt()
         lowerNum = second.toInt()
@@ -25,15 +27,18 @@ fun main() {
     logger.info { "Prime numbers from $lowerNum to $higherNum are:" }
 
     while (lowerNum < higherNum+1) {
-        divisible = false
-        for (i in 2..lowerNum-1) {
-            if (lowerNum % i == 0) {
+        divisible = false //set divisible to false at each while iteration
+
+        for (i in 2..lowerNum-1) { //index starts at 2 to exclude 1. Ends at lowerNum -1 to exclude lowerNum value
+            if (lowerNum % i == 0) { //if lowerNum is divisible by a number other than itself and 1, it is not a prime number
                 divisible=true
             }
         }
-       if (divisible==false) {
+
+       if (divisible==false) { //if it is not divisible, add lowerNum to primeSet
            primeSet +="[$lowerNum] "
        }
+
         lowerNum++
     }
     logger.info { "$primeSet" }
