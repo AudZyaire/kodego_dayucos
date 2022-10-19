@@ -1,4 +1,6 @@
 package Activity_01_H
+import mu.KotlinLogging
+private val logger = KotlinLogging.logger{}
 
 fun main() {
 
@@ -9,9 +11,9 @@ fun main() {
     var divisible:Boolean?
     //var primeSet = arrayListOf<Int>()
     var primeSet: String = ""
-    print("Enter First Number: ")
+    logger.info { "Enter First Number: " }
     first = readln()
-    print("Enter Second Number: ")
+    logger.info { "Enter Second Number: " }
     second = readln()
     if (first > second) {
         higherNum = first.toInt()
@@ -20,7 +22,7 @@ fun main() {
         higherNum = second.toInt()
         lowerNum = first.toInt()
     }
-    println("Prime numbers from $lowerNum to $higherNum are:")
+    logger.info { "Prime numbers from $lowerNum to $higherNum are:" }
 
     while (lowerNum < higherNum+1) {
         divisible = false
@@ -28,15 +30,12 @@ fun main() {
             if (lowerNum % i == 0) {
                 divisible=true
             }
-
         }
        if (divisible==false) {
            primeSet +="[$lowerNum] "
-           //primeSet.add(num1)
        }
         lowerNum++
     }
-
-    print(primeSet)
+    logger.info { "$primeSet" }
 
 }
