@@ -1,4 +1,13 @@
+
+/**
+ * Create an application that will accept 2 string inputs.
+ * Your application will print all unique characters in both Strings.
+ */
+
 package Activity_01_F
+import mu.KotlinLogging
+
+private val logger = KotlinLogging.logger{}
 
 fun main() {
 
@@ -10,9 +19,9 @@ fun main() {
     var string1Unique:HashSet<Char> = hashSetOf()
     var string2Unique:HashSet<Char> = hashSetOf()
 
-    print("Enter first String: ")
+    logger.info { "Enter first String: " }
     string1 = readln()
-    print("Enter second String: ")
+    logger.info { "Enter second String: " }
     string2 = readln()
 
     do {
@@ -31,7 +40,7 @@ fun main() {
         index++
     }while(index < string2.length)
 
-    println("Unique elements in the first string: $string1Unique")
-    println("Unique elements in the second string: $string2Unique")
+    logger.info { "Unique elements in the first string: $string1Unique" }
+    logger.info { "Unique elements in the second string: $string2Unique" }
 
 }
