@@ -40,7 +40,7 @@ fun main() {
         }
         counter = 0
     }
-counter = 0
+    counter = 0
     //compare string2 elements to itself, store to string2Unique if no duplicate
     for (characters in string2) {
         for (characterCompare in string2) {
@@ -87,6 +87,7 @@ counter = 0
         logger.info { "Unique elements in the first string: $string1NoDupe" }
         logger.info { "Unique elements in the second string: $string2NoDupe" }
     uniqueCombined = string1NoDupe + string2NoDupe
+    //added formatting to the unique characters
     for (i in uniqueCombined) {
         uniqueCombinedFormat += "[ $i ]"
     }
