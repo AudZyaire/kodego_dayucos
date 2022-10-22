@@ -49,8 +49,12 @@ fun main() {
             dateReturn = dateTimeNow.plusDays(daysBorrowed.toLong()).format(dateFormat1)
             dateReturnList.add(dateReturn)
         }
-        println("Another student wants to borrow? Y/N")
-        var yesNo = readln()
+        do {
+            println("Another student wants to borrow? Y/N")
+            yesNo = readln()
+        }while (yesNo.uppercase() != "Y" && yesNo.uppercase() != "N")
+
+
     }while (yesNo.uppercase() == "Y")
     logger.info { "-----------------------" }
     logger.info { "-- List of borrowers --" }
