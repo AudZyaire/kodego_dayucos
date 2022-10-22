@@ -22,8 +22,6 @@ fun main() {
 
     logger.info {"---Library Book Borrowing System---"}
     do {
-
-        if (yesNo.uppercase() == "Y") {
             logger.info {"Enter Student ID: "}
             var studId = readln()
             logger.info {"Enter Last Name: "}
@@ -48,7 +46,6 @@ fun main() {
             dateBorrowedList.add(dateBorrowed)
             dateReturn = dateTimeNow.plusDays(daysBorrowed.toLong()).format(dateFormat1)
             dateReturnList.add(dateReturn)
-        }
         do {
             println("Another student wants to borrow? Y/N")
             yesNo = readln()
