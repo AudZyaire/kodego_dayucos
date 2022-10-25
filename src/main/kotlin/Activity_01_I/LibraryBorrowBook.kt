@@ -11,7 +11,6 @@ fun main() {
     var dateBorrowedList: ArrayList<String> = arrayListOf()
     var dateReturnList: ArrayList<String> = arrayListOf()
     var dateTimeNow = LocalDateTime.now()
-    //  var dateTime = LocalDateTime.of(2022, Month.OCTOBER, 5,8,1)
     var dateFormat1 = DateTimeFormatter.ofPattern("M/d/y H:m:ss")
     var daysBorrowed: String
     var lastName: String
