@@ -22,12 +22,17 @@ fun main() {
     var exitProgram = true
 
         do { //Show GUI
-            logger.info { "-- Library System --" }
-            logger.info { "1. Book Borrow" }
-            logger.info { "2. Show Books Borrowed/ Borrower information" }
-            logger.info { "3. Exit Program" }
-            logger.info { "Enter a number to proceed:" }
-            guiAnswer = readln()
+            //error handling
+            do {
+                logger.info { "-- Library System --" }
+                logger.info { "1. Book Borrow" }
+                logger.info { "2. Show Books Borrowed/ Borrower information" }
+                logger.info { "3. Exit Program" }
+                logger.info { "Enter a number to proceed:" }
+                guiAnswer = readln()
+                if (guiAnswer.toIntOrNull() == null)
+                    logger.info { "Enter a valid choice." }
+            } while (guiAnswer?.toIntOrNull() == null)
             if (guiAnswer.toInt() == 1) {
 
                 do {
@@ -79,7 +84,7 @@ fun main() {
                 exitProgram = true
             } else {
                 exitProgram = false
-                logger.warn { "Input Error" }
+                logger.warn { "Enter a valid choice." }
             }
-        } while (exitProgram == false)
+        } while (exitProgram == false || guiAnswer?.toIntOrNull() == null)
 }
