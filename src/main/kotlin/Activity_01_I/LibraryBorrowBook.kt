@@ -26,6 +26,7 @@ fun main() {
             logger.info { "1. Book Borrow" }
             logger.info { "2. Show Books Borrowed/ Borrower information" }
             logger.info { "3. Exit Program" }
+            logger.info { "Enter a number to proceed:" }
             guiAnswer = readln()
             if (guiAnswer.toInt() == 1) {
 
