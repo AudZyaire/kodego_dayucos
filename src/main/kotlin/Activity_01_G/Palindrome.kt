@@ -11,19 +11,11 @@ fun main() {
 
     print("Enter a string: ")
     var string1 = readln()
-/* Using reversed() function
-    if (string1.uppercase() == string1.reversed().uppercase()) {
-        logger.info { "$string1 is a palindrome." }
-    } else {
-        logger.info { "$string1 is not a palindrome" }
-    }
-    logger.info { "$string1 in reverse is ${string1.reversed()}" }
- */
-    //using loops
-    var index:Int = string1.lastIndex  //assign the last index of string1 to index
+
+    var index:Int = string1.lastIndex  //assign the lastIndex value of string1 to index
     var reversed: String = ""
 
-    for (i in string1.indices) {
+    for (i in string1.indices) { //loop until the last index
         reversed += string1[index] //assigning every character to reversed variable from the last index to index 0
         index--
     }
