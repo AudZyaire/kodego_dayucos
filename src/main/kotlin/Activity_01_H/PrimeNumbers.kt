@@ -29,14 +29,16 @@ fun main() {
     while (lowerNum < higherNum+1) {
         divisible = false //set divisible to false at each while iteration
 
-        for (i in 2..lowerNum-1) { //index starts at 2 to exclude 1. Ends at lowerNum -1 to exclude lowerNum value
-            if (lowerNum % i == 0) { //if lowerNum is divisible by a number other than itself and 1, it is not a prime number
+        for (i in 2 until lowerNum-1) { //index starts at 2 to exclude 1. Ends at lowerNum -1 to exclude lowerNum value
+            if (lowerNum % i == 0) { //if lowerNum is divisible by a number other than itself, it is not a prime number
                 divisible=true
             }
         }
 
        if (divisible==false) { //if it is not divisible, add lowerNum to primeSet
-           primeSet +="[$lowerNum] "
+           if (lowerNum > 1) {
+               primeSet += "[$lowerNum] "
+           }
        }
 
         lowerNum++
