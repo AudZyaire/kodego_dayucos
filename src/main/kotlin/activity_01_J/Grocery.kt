@@ -1,4 +1,4 @@
-package Activity_01_J
+package activity_01_J
 import mu.KotlinLogging
 private val logger = KotlinLogging.logger{}
 fun main() {

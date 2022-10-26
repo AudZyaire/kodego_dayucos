@@ -1,4 +1,4 @@
-package Activity_01_I
+package activity_01_I
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 import mu.KotlinLogging

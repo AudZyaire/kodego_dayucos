@@ -4,7 +4,7 @@
  * Your application will print all unique characters in both Strings.
  */
 
-package Activity_01_F
+package activity_01_F
 
 import mu.KotlinLogging
 

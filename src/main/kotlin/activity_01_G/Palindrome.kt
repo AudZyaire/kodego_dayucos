@@ -3,7 +3,7 @@
  * Your application will print “Palindrome” if the string is a palindrome.
  */
 
-package Activity_01_G
+package activity_01_G
 import mu.KotlinLogging
 private val logger = KotlinLogging.logger{}
 
