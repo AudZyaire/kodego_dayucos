@@ -1,5 +1,7 @@
 package activity_01_J
 import mu.KotlinLogging
+import kotlin.math.roundToInt
+
 private val logger = KotlinLogging.logger{}
 fun main() {
     var numberList: ArrayList<Int> = arrayListOf()
@@ -36,7 +38,6 @@ fun main() {
                 totalPerItemList.clear()
                 numberList.clear()
                 numberID = 0
-                logger.info { "Show PoS" }
                 do {
                     logger.info { "Enter Item: " }
                     item = readln()
@@ -88,6 +89,7 @@ fun main() {
                     total += i
                 }
                 logger.info { "----------" }
+                total = ((total * 100).roundToInt().toDouble() / 100)
                 logger.info { "TOTAL: $total" }
                 programExit = false
             } else if (guiAnswer.toInt() == 2) {
