@@ -84,8 +84,8 @@ fun main() {
 
     }
         logger.info { "Removing duplicates..." }
-        logger.info { "Unique elements in the first string: $string1NoDupe" }
-        logger.info { "Unique elements in the second string: $string2NoDupe" }
+//        logger.info { "Unique elements in the first string: $string1NoDupe" }
+//        logger.info { "Unique elements in the second string: $string2NoDupe" }
     uniqueCombined = string1NoDupe + string2NoDupe
     //added formatting to the unique characters
     for (i in uniqueCombined) {

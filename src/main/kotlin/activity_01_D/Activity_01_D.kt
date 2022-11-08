@@ -38,11 +38,11 @@ fun main() {
             logger.info { "Divide $moneySum by?: " }
             divideBy = readln()
 
-            if (divideBy.toDoubleOrNull() == null) {
+            if (divideBy.toDoubleOrNull() == null || divideBy.toInt() == 0) {
                 logger.warn { "Enter a valid number." }
             }
 
-        }while (divideBy.toDoubleOrNull() == null) //will break loop ONLY IF divideBy value is number
+        }while (divideBy.toDoubleOrNull() == null || divideBy.toInt() == 0) //will break loop ONLY IF divideBy value is number or not 0
 
         quotient = moneySum / divideBy.toDouble()
         quotientRound = (quotient * 100).roundToInt().toDouble() / 100 //reduce decimal places to TWO
