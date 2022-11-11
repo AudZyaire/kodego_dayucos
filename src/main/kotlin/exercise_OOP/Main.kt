@@ -4,8 +4,8 @@ import exercise_OOP.Cart.OrderStatus.*
 
 fun main() {
     val cart1 = Cart()
-    val cartID = cart1.id
     val customer1 = Cart.Customer()
+    val cartID = cart1.id
     println("What is your last name?")
     var lastName = readln()
     println("What is your first name?")
@@ -37,24 +37,8 @@ fun main() {
     cart1.updateOrder(customer1.lastName,itemReplace)
     cart1.showItemsInCart(concatenatedName,cartID)
     println()
-    println()
+
     val orderStatus = Cart.OrderStatus.CANCELLED
-    when (orderStatus) {
-        SENT_TO_THE_KITCHEN -> cart1.showOrderStatus(orderStatus,cartID)
-        BEING_PREPARED -> cart1.showOrderStatus(orderStatus,cartID)
-        FOR_PICK_UP -> cart1.showOrderStatus(orderStatus,cartID)
-        FOR_DELIVERY -> cart1.showOrderStatus(orderStatus,cartID)
-        DELIVERED -> cart1.showOrderStatus(orderStatus,cartID)
-        CANCELLED -> cart1.showOrderStatus(orderStatus,cartID)
-        PAID -> cart1.showOrderStatus(orderStatus,cartID)
-        UNKNOWN -> cart1.showOrderStatus(orderStatus,cartID)
-    }
-
-
-
-
-
-
-
+    cart1.showOrderStatus(orderStatus,cartID)
 
 }
