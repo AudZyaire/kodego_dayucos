@@ -8,7 +8,7 @@ open class Cart {
     var quantityOfItemsInCart: ArrayList<Int>
     var id: Int
 
-    constructor(itemsInCart:ArrayList<String> = arrayListOf(""), quantityOfItemsInCart: ArrayList<Int> = arrayListOf(0), id: Int = (101..999).random()) {
+    constructor(itemsInCart:ArrayList<String> = arrayListOf(), quantityOfItemsInCart: ArrayList<Int> = arrayListOf(), id: Int = (101..999).random()) {
         this.itemsInCart = itemsInCart
         this.quantityOfItemsInCart = quantityOfItemsInCart
         this.id = id
