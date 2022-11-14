@@ -2,6 +2,8 @@ package exercise_oop_2
 
 fun main() {
     showAllItems()
+
+    //Make object cart1 and assign values
     var cart1 = Cart()
     cart1.items = arrayListOf("Banana", "Mango", "Apple", "Guava")
     cart1.uniqueId = 201
@@ -11,8 +13,12 @@ fun main() {
     cart1.customer.mobileNumber = "0999999999"
     cart1.orderStatus = OrderStatus1.BEING_PREPARED
     cart1.printInfoOfCart()
+
+    //Change order status
     changeOrderStatus(cart1,OrderStatus1.PAID)
     cart1.printInfoOfCart()
+
+    //Update items in the chosen cart
     var updatedItems = arrayListOf<String>("Mango")
     cart1.orderStatus = OrderStatus1.BEING_PREPARED
     updateOrder(cart1, updatedItems)
