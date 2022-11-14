@@ -115,11 +115,8 @@ fun countStudent(record: ArrayList<String>) {
 
 
 fun searchStudentWildSearch (name: String, record: ArrayList<String>) {
-    var nameLength = name.length
-    for (i in record) {
-        if (name.uppercase() in i.uppercase())
-            logger.info{"Found: $i"}
-    }
+
+    TODO()
 }
 
 fun searchStudentName(name: String, record: ArrayList<String>) {

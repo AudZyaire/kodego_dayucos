@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="056060c9-081c-42d7-8e24-c5f1b124636d" name="Changes" comment="Changed package names' first character to lowercase as per the IDE suggestion">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/activity_03_A/StudentRecord.kt" afterDir="false" />
+    <list default="true" id="056060c9-081c-42d7-8e24-c5f1b124636d" name="Changes" comment="Enhanced Code">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/activity_03_B/BookRecord.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/activity_03_C/Grocery.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/activity_04_A/Student.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/activity_04_A/StudentWithWildSearch.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/activity_04_B/Activity_04.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/exercise_oop_2/FastFoodItems.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/activity_01_J/Grocery.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/activity_01_J/Grocery.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/activity_03_A/StudentRecord.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/activity_03_A/StudentRecord.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +27,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Class" />
         <option value="Kotlin File" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -45,6 +50,9 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/Kodego/Kotlin/KodeGoExercises_Dayucos/src/main/kotlin/activity_01_J/Grocery.kt&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;two.files.diff.last.used.file&quot;: &quot;D:/Kodego/Kotlin/KodeGoExercises_Dayucos/src/main/kotlin/activity_01_J/Grocery.kt&quot;
   }
@@ -70,29 +78,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IfSampleKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="IfSampleKt" />
+    <configuration name="BookRecordKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="activity_03_B.BookRecordKt" />
       <module name="KodeGoExercises_Dayucos.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RepeatKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="RepeatKt" />
+    <configuration name="LibraryBorrowBookKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="activity_01_I.LibraryBorrowBookKt" />
       <module name="KodeGoExercises_Dayucos.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UnaryOperationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="UnaryOperationKt" />
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercise_OOP.MainKt" />
       <module name="KodeGoExercises_Dayucos.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WhenAndIfKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="WhenAndIfKt" />
+    <configuration name="UniqueCharactersKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="activity_01_F.UniqueCharactersKt" />
       <module name="KodeGoExercises_Dayucos.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -101,10 +109,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Kotlin.Activity_01_DKt" />
-        <item itemvalue="Kotlin.RepeatKt" />
-        <item itemvalue="Kotlin.WhenAndIfKt" />
-        <item itemvalue="Kotlin.UnaryOperationKt" />
-        <item itemvalue="Kotlin.IfSampleKt" />
+        <item itemvalue="Kotlin.BookRecordKt" />
+        <item itemvalue="Kotlin.MainKt" />
+        <item itemvalue="Kotlin.LibraryBorrowBookKt" />
+        <item itemvalue="Kotlin.UniqueCharactersKt" />
       </list>
     </recent_temporary>
   </component>
@@ -299,7 +307,42 @@
       <option name="project" value="LOCAL" />
       <updated>1666791944315</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Added StudentRecord.kt - Activity_03_A">
+      <created>1667819911988</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1667819911988</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Enhanced code">
+      <created>1667907552540</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1667907552541</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Added exercise_OOP">
+      <created>1668184564931</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1668184564931</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Enhanced Code">
+      <created>1668184729227</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1668184729227</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Enhanced Code">
+      <created>1668234490486</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1668234490486</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -334,6 +377,10 @@
     <MESSAGE value="Enhanced Activity_01_H - PrimeNumbers.kt code" />
     <MESSAGE value="Enhanced Activity_01_G - Palindrome.kt code" />
     <MESSAGE value="Changed package names' first character to lowercase as per the IDE suggestion" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed package names' first character to lowercase as per the IDE suggestion" />
+    <MESSAGE value="Added StudentRecord.kt - Activity_03_A" />
+    <MESSAGE value="Enhanced code" />
+    <MESSAGE value="Added exercise_OOP" />
+    <MESSAGE value="Enhanced Code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Enhanced Code" />
   </component>
 </project>
