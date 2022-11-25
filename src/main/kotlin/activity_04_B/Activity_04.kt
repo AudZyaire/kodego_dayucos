@@ -156,4 +156,5 @@ class Publisher(
     var name: String = "",
     var address: String = "",
     var dateEstablished: Date = Date(),
-)
+){
+}
