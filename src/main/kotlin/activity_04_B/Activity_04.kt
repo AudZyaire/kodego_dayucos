@@ -20,32 +20,37 @@ fun main() {
     searchTitle("sample",x,y,z)
     searchByAuthor("Joni Dayucos",x,y,z,a)
 }
+open class LibraryItems(){
+    open var reserved: Boolean = false
+    open var internalUse : Boolean = false
+    open var itemForFixing : Boolean = false
 
-class Book(
+}
+open class Book(
     var title: String = "",
     var author: Author = Author(),
-    var yearPublished: Int = 0,
+    var yearPublished: Date = Date(),
     var edition: Int = 0,
     var isbn: Int = 0,
-    var publisher: String = "",
-)
+
+): LibraryItems()
 
 //2. Add a class for magazines.
 //A magazine has an editor, a title, a month published, a year published
 //A Newspaper, and magazine have articles.
-class Magazine(
+open class Magazine(
     var editor: String = "",
     var author: Author = Author(),
     var title: String = "",
     var monthPublished: Date = Date(),
     var yearPublished: Date = Date(),
     var article: Article = Article(),
-)
+): LibraryItems()
 
 //3. Add a class for newspaper.
 //A newspaper has a name, day published, month published, year published and headline.
 //A Newspaper, and magazine have articles.
-class Newspaper(
+open class Newspaper(
     var name: String = "",
     var author: Author = Author(),
     var dayPublished: Date = Date(),
@@ -53,7 +58,7 @@ class Newspaper(
     var yearPublished: Date = Date(),
     var headline: String = "",
     var article: Article = Article(),
-)
+): LibraryItems()
 
 //4. Add a class Authors.
 //Authors have firstName, lastName, middleName, date of birth.
@@ -66,13 +71,13 @@ class Author(
 
 //5. Add a class Comics.
 //A comic has a title, month published, year published, illustrators, publisher.
-class Comic(
+open class Comic(
     var title: String = "",
     var author: Author = Author(),
     var monthPublished: Date = Date(),
     var illustrators: Illustrator = Illustrator(),
     var publisher: Publisher = Publisher(),
-)
+): LibraryItems()
 
 //Create a class illustrator.
 //Illustrator have firstName, lastName, middleName, date of birth.
@@ -152,7 +157,7 @@ class AudioOrVideoRecording(
 
 //10. Create a Publisher class.
 //A publisher a name, address and date established.
-class Publisher(
+open class Publisher(
     var name: String = "",
     var address: String = "",
     var dateEstablished: Date = Date(),

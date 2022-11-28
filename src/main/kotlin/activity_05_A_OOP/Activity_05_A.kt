@@ -1,8 +1,36 @@
 package activity_05_A_OOP
 
+import activity_06_A.checkGrades
+import java.lang.Exception
 import java.util.*
 import kotlin.collections.ArrayList
 
+fun main() {
+    //student1
+    var stud1 = CertificateStudent("John", "Bayani", "Dela Cruz","Lapu-Lapu",Date(1995))
+    var stud1Grades = arrayListOf<Int>(90,89,92,75,23,50,43,23,50,22,23)
+    for(grade in stud1Grades) {
+        stud1.grades.add(grade)
+    }
+    println("Name: ${stud1.firstName} ${stud1.middleName} ${stud1.lastName}")
+    println("Grades: $stud1Grades")
+
+    //student2
+    var stud2 = CertificateStudent("Bill", "Tan", "Clinton","Manila",Date(1995))
+    var stud2Grades = arrayListOf<Int>(90,89,92,75,23,50,43,23,0,22)
+    for(grade in stud2Grades) {
+        stud2.grades.add(grade)
+    }
+    println("Name: ${stud2.firstName} ${stud2.middleName} ${stud2.lastName}")
+    println("Grades: $stud2Grades")
+
+
+        checkGrades(stud1)
+        checkGrades(stud2)
+
+
+
+}
 
 //Create a person class with firstname, middlename, lastname, address and birthday.
 open class Person {
@@ -25,6 +53,7 @@ open class Person {
 //Create a Student class that inherits the Person class. A student has a year he/she entered the school. A student has an ID.
 open class Student(firstName: String, middleName: String, lastName: String, address: String, birthDay: Date) :
     Person(firstName, middleName, lastName, address, birthDay) {
+    var grades: ArrayList<Int> = arrayListOf()
     var yearFirstAttended: Date = Date()
     var studentID: String = ""
     var status: Status = Status.UNKNOWN
