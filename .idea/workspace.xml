@@ -4,17 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="056060c9-081c-42d7-8e24-c5f1b124636d" name="Changes" comment="Added new activities">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/activity_02_A/Activity_02_A.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/activity_02_B/Activity_02_B.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/activity_02_C/Activity_02_C.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/activity_02_D/Activity_02_D.kt" afterDir="false" />
+    <list default="true" id="056060c9-081c-42d7-8e24-c5f1b124636d" name="Changes" comment="Enhanced Code">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/activity_06_C/Activity_06_C.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/activity_03_A/StudentRecord.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/activity_03_A/StudentRecord.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/activity_03_B/BookRecord.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/activity_03_B/BookRecord.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/activity_04_A/Student.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/activity_04_A/Student.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/activity_04_A/StudentWithWildSearch.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/activity_04_B/Activity_04.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/activity_04_B/Activity_04.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/activity_05_C_OOP/Activity_05_C.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/activity_05_C_OOP/Activity_05_C.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin File" />
         <option value="Kotlin Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -73,7 +65,7 @@
       <recent name="exercise_1" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.Activity_01_DKt">
+  <component name="RunManager">
     <configuration name="Activity_01_DKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Activity_01_DKt" />
       <module name="KodeGoExercises_Dayucos.main" />
@@ -366,7 +358,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669356293705</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Added new activities">
+      <created>1669653698223</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1669653698223</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Enhanced Code">
+      <created>1669653768800</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1669653768800</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -404,8 +410,8 @@
     <MESSAGE value="Enhanced code" />
     <MESSAGE value="Added exercise_OOP" />
     <MESSAGE value="Enhanced Code and commit other activities" />
-    <MESSAGE value="Enhanced Code" />
     <MESSAGE value="Added new activities" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added new activities" />
+    <MESSAGE value="Enhanced Code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Enhanced Code" />
   </component>
 </project>

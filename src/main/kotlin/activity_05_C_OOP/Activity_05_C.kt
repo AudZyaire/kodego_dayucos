@@ -1,5 +1,7 @@
 package activity_05_C_OOP
 
+import activity_06_C.checkForExceptions
+
 
 //1. Create a parent class for all the products in the grocery.
 open class Products {
@@ -50,6 +52,7 @@ class Main {
     }
 
     fun checkOutCart_(cart: Cart_) {
+
         var number = 1
         var total = 0.0
         for (item in cart.items) {
