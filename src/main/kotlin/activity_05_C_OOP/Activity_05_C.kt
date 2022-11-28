@@ -1,6 +1,6 @@
 package activity_05_C_OOP
-
-import activity_06_C.checkForExceptions
+import activity_06_C.addToCartExceptions
+import activity_06_C.checkOutExceptions
 
 
 //1. Create a parent class for all the products in the grocery.
@@ -34,6 +34,8 @@ class Cart_ {
 class Main {
 
     fun addToCart_(cart: Cart_, item: Products, quantity: Double) {
+        addToCartExceptions(item,quantity)
+
         cart.items.put(item, quantity)
     }
 
@@ -52,7 +54,7 @@ class Main {
     }
 
     fun checkOutCart_(cart: Cart_) {
-
+        checkOutExceptions(cart)
         var number = 1
         var total = 0.0
         for (item in cart.items) {

@@ -1,9 +1,6 @@
 package activity_06_C
 
-import activity_05_C_OOP.Cart_
-import activity_05_C_OOP.Fruit
-import activity_05_C_OOP.Main
-import activity_05_C_OOP.Shampoo
+import activity_05_C_OOP.*
 
 //When a customer checks out an item, identify the possible scenarios where a cart can not be checked out properly.
 //
@@ -20,19 +17,19 @@ import activity_05_C_OOP.Shampoo
 fun main() {
     var cart1 = Cart_()
     var main1 = Main()
-    main1.addToCart_(cart1, Shampoo("Palmolive", 3.0), 5.0)
-    main1.addToCart_(cart1, Fruit("Mango", 10.2), 5.0)
-    main1.addToCart_(cart1, Fruit("Apple", 10.0), 4.0)
-    main1.addToCart_(cart1, Fruit("Banana", 2.0), 3.0)
+    main1.addToCart_(cart1, Shampoo("Palmolive", 2.0), 3.0)
+//    main1.addToCart_(cart1, Fruit("Mango", 10.2), 5.0)
+//    main1.addToCart_(cart1, Fruit("Apple", 10.0), 4.0)
+//    main1.addToCart_(cart1, Fruit("Banana", 2.0), 3.0)
 
-    checkForExceptions(cart1)
+//    checkOutExceptions(cart1)
 }
 class InvalidProductQuantityException(message: String = "Quantity of any item can't be 0!") : Exception(message)
 class InvalidProductPriceException(message: String = "Price of any item can't be equal to 0!") : Exception(message)
 class InvalidProductNameException(message: String = "Product name of any product can't be empty") : Exception(message)
 class EmptyCartException(message: String = "Cart is empty!") : Exception(message)
 
-fun checkForExceptions(cart: Cart_) {
+fun checkOutExceptions(cart: Cart_) {
 
     for(i in cart.items) {
 
@@ -48,5 +45,18 @@ fun checkForExceptions(cart: Cart_) {
 
     if (cart.items.size == 0)
         throw EmptyCartException()
+
+}
+
+fun addToCartExceptions(item: Products, quantity: Double) {
+
+    if(quantity <= 0.0)
+        throw InvalidProductQuantityException()
+
+    if(item.price <= 0.0)
+        throw InvalidProductPriceException()
+
+    if(item.name == "")
+        throw InvalidProductNameException()
 
 }
