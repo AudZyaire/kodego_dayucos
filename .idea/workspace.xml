@@ -4,15 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="056060c9-081c-42d7-8e24-c5f1b124636d" name="Changes" comment="Enhanced Code">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/activity_03_B/BookRecord.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/activity_03_C/Grocery.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/activity_04_A/Student.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/activity_04_A/StudentWithWildSearch.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/activity_04_B/Activity_04.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/exercise_oop_2/FastFoodItems.kt" afterDir="false" />
+    <list default="true" id="056060c9-081c-42d7-8e24-c5f1b124636d" name="Changes" comment="Added new activities">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/activity_02_A/Activity_02_A.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/activity_02_B/Activity_02_B.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/activity_02_C/Activity_02_C.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/activity_02_D/Activity_02_D.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/activity_03_A/StudentRecord.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/activity_03_A/StudentRecord.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/activity_03_B/BookRecord.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/activity_03_B/BookRecord.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/activity_04_A/Student.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/activity_04_A/Student.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/activity_04_A/StudentWithWildSearch.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/activity_04_B/Activity_04.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/activity_04_B/Activity_04.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/activity_05_C_OOP/Activity_05_C.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/activity_05_C_OOP/Activity_05_C.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +73,7 @@
       <recent name="exercise_1" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Kotlin.Activity_01_DKt">
     <configuration name="Activity_01_DKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Activity_01_DKt" />
       <module name="KodeGoExercises_Dayucos.main" />
@@ -80,6 +83,13 @@
     </configuration>
     <configuration name="BookRecordKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="activity_03_B.BookRecordKt" />
+      <module name="KodeGoExercises_Dayucos.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FastFoodKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercise_oop_FromSir.FastFoodKt" />
       <module name="KodeGoExercises_Dayucos.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -99,20 +109,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UniqueCharactersKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="activity_01_F.UniqueCharactersKt" />
-      <module name="KodeGoExercises_Dayucos.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Kotlin.Activity_01_DKt" />
+        <item itemvalue="Kotlin.FastFoodKt" />
         <item itemvalue="Kotlin.BookRecordKt" />
         <item itemvalue="Kotlin.MainKt" />
         <item itemvalue="Kotlin.LibraryBorrowBookKt" />
-        <item itemvalue="Kotlin.UniqueCharactersKt" />
       </list>
     </recent_temporary>
   </component>
@@ -342,7 +345,28 @@
       <option name="project" value="LOCAL" />
       <updated>1668234490486</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Enhanced Code and commit other activities">
+      <created>1668415621859</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1668415621859</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Enhanced Code">
+      <created>1668424215488</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1668424215488</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Added new activities">
+      <created>1669356293705</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1669356293705</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -357,7 +381,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Initial Commit" />
     <MESSAGE value="added exercise 1 package&#10;added Main.kt in exercise_1" />
     <MESSAGE value="added class Main" />
     <MESSAGE value="revised the code, reduced it to just declaring variables" />
@@ -380,7 +403,9 @@
     <MESSAGE value="Added StudentRecord.kt - Activity_03_A" />
     <MESSAGE value="Enhanced code" />
     <MESSAGE value="Added exercise_OOP" />
+    <MESSAGE value="Enhanced Code and commit other activities" />
     <MESSAGE value="Enhanced Code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Enhanced Code" />
+    <MESSAGE value="Added new activities" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added new activities" />
   </component>
 </project>

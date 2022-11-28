@@ -1,6 +1,7 @@
 package activity_04_B
 
 import java.util.*
+import kotlin.collections.ArrayList
 
 //1. Use class to represent the Book rather string.
 //A book has a title, authors, year published, edition, ISBN, publisher.
@@ -8,17 +9,26 @@ import java.util.*
 //A book has a number of pages.
 
 fun main() {
-    val x = Magazine()
-    val y = Newspaper()
-    val z = Comic()
-    val a = Book()
-    x.title = "Magazine by Joni"
-    y.headline = "sample"
-    z.title = "sample"
-    x.author.firstName = "Joni"
-    x.author.lastName = "Dayucos"
-    searchTitle("sample",x,y,z)
-    searchByAuthor("Joni Dayucos",x,y,z,a)
+    var author1 = Author("George","Martin")
+    var author2 = Author("Stephen","Hawkings")
+    var author3 = Author("Juan","Dela Cruz")
+    var book1 = Book("A Brief History of Time",author1)
+    var book2 = Book("A Song of Ice and Fire",author1)
+    var book3 = Book("Psychology 101", author3)
+    var bookList : ArrayList<Book> = arrayListOf(book1, book2,book3)
+
+    var magazine1 = Magazine(author = author3, title = "Top 10 things to do before 30")
+    var magazine2 = Magazine(author = author2, title = "Top 5 things you need to do to work faster")
+    var magazineList: ArrayList<Magazine> = arrayListOf(magazine1,magazine2)
+
+    var comicList: ArrayList<Comic> = arrayListOf()
+    var newsPaperList: ArrayList<Newspaper> = arrayListOf()
+
+    searchByAuthor("Juan Dela Cruz",magazineList,newsPaperList,comicList,bookList)
+    searchTitle("A Brief History of Time",magazineList,newsPaperList,comicList,bookList)
+
+
+
 }
 open class LibraryItems(){
     open var reserved: Boolean = false
@@ -98,46 +108,54 @@ class Article(
 
 
 //7. Create a search function to search for the title of a magazine, newspaper, comics.
-fun searchTitle(titleToSearch: String, magazine: Magazine, newsPaper: Newspaper, comic: Comic) {
-    var title = ""
-        //magazine search
-    for (item in magazine.title) {
-        title+= item
+fun searchTitle(titleToSearch: String, magazines: ArrayList<Magazine>, newspapers: ArrayList<Newspaper>, comics: ArrayList<Comic>, books: ArrayList<Book>) {
+    println("Searching by title...")
+    for (magazine in magazines) {
+        if (magazine.title.uppercase() == titleToSearch.uppercase()){
+            println("${magazine.title} magazine found and is authored by: ${magazine.author.firstName}  ${magazine.author.lastName}")
         }
-    if (title == titleToSearch) {
-        println("Found $title in magazines" )
     }
-    title = ""
-    //newspaper search
-    for (item in newsPaper.headline) {
-        title+= item
+    for (newspaper in newspapers) {
+        if (newspaper.headline.uppercase() == titleToSearch.uppercase()){
+            println("${newspaper.headline} headline found in News Papers and is authored by: ${newspaper.author.firstName}  ${newspaper.author.lastName}")
+        }
     }
-    if (title == titleToSearch) {
-        println("Found $title in newspapers" )
+    for (comic in comics) {
+        if (comic.title.uppercase() == titleToSearch.uppercase()){
+            println("${comic.title} comic found and is authored by: ${comic.author.firstName}  ${comic.author.lastName}")
+        }
     }
-    title = ""
-    //comic search
-    for (item in comic.title) {
-        title+= item
-    }
-    if (title == titleToSearch) {
-        println("Found $title in comics" )
+    for (book in books) {
+        if (book.title.uppercase() == titleToSearch.uppercase()){
+            println("${book.title} book found and is authored by: ${book.author.firstName}  ${book.author.lastName}")
+        }
     }
 }
 
 //8. Create a function that will list the name of the magazine, newspaper, comics or book, author has written in.
-fun searchByAuthor (author: String, magazine: Magazine, newspaper: Newspaper, comic: Comic, book: Book) {
-    if (author == magazine.author.firstName + " " + magazine.author.lastName) {
-        println(magazine.title)
+fun searchByAuthor(author: String, magazines: ArrayList<Magazine>, newspapers: ArrayList<Newspaper>, comics: ArrayList<Comic>, books: ArrayList<Book>) {
+   println("Searching by author...")
+    for (magazine in magazines) {
+        if (magazine.author.firstName.uppercase() + " " + magazine.author.lastName.uppercase() == author.uppercase()){
+            println("${magazine.title} magazine is authored by: $author")
+        }
     }
-    if (author == newspaper.author.firstName + " " + newspaper.author.lastName) {
-        println(newspaper.headline)
+
+    for (newspaper in newspapers) {
+        if (newspaper.author.firstName.uppercase() + " " + newspaper.author.lastName.uppercase() == author.uppercase()){
+            println("${newspaper.headline} is authored by: $author")
+        }
     }
-    if (author == comic.author.firstName + " " + comic.author.lastName) {
-        println(comic.title)
+
+    for (comic in comics) {
+        if (comic.author.firstName.uppercase() + " " + comic.author.lastName.uppercase() == author.uppercase()){
+            println("${comic.title} is authored by: $author")
+        }
     }
-    if (author == book.author.firstName + " " + book.author.lastName) {
-        println(book.title)
+    for (book in books) {
+        if (book.author.firstName.uppercase() + " " + book.author.lastName.uppercase() == author.uppercase()){
+            println("${book.title} is authored by: $author")
+        }
     }
 }
 
@@ -161,5 +179,5 @@ open class Publisher(
     var name: String = "",
     var address: String = "",
     var dateEstablished: Date = Date(),
-){
+) {
 }

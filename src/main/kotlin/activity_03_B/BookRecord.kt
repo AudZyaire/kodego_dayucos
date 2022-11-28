@@ -33,16 +33,23 @@ fun countBooks(bookName: ArrayList<String>): Int {
 }
 
 //6. Create a function "searchBookWildSearch" that will accept a String and search if that string is found with in the ArrayList, it will return an ArrayList of books that matched if there are.
-fun searchBookWildSearch(bookToSearch: String, bookName: ArrayList<String>) {
+fun searchBookWildSearch(bookToSearch: String, bookName: ArrayList<String>): ArrayList<String> {
     var booksFound = arrayListOf<String>()
     for (book in bookName) {
-        if (bookToSearch.uppercase() == book.uppercase().subSequence(bookToSearch.indices) ){
+        if (book.uppercase().contains(bookToSearch.uppercase())) {
             booksFound.add(book)
         }
     }
+
+//    for (book in bookName) {
+//        if (bookToSearch.uppercase() == book.uppercase().subSequence(bookToSearch.indices) ){
+//            booksFound.add(book)
+//        }
+//    }
     for (book in booksFound) {
         println(book)
     }
+    return booksFound
 }
 
 //7. Create a function  "searchBookName" that will accept a String and search if there is an exact match of the String input, it will return an ArrayList of books that matched if there are.

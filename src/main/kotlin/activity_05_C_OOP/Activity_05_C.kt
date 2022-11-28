@@ -22,8 +22,6 @@ class BottledWater(name: String, price: Double) : Products(name, price)
 //2. Create a cart to store the groceries.
 class Cart_ {
     var items: HashMap<Products, Double> = hashMapOf()
-
-
 }
 
 //3. Create a Main class where you will add the Cart.
@@ -38,46 +36,42 @@ class Main {
     }
 
 
-    fun removeFromCart_(cart: Cart_,itemToRemove: String) {
-        var removeItem = Products(itemToRemove,0.0)
-        var found = false
-        for (item in cart.items.keys) {
-            if (removeItem.name == item.name) {
-                cart.items.remove(item)
-                found = true
-            }
-        }
-        if (found == true) {
-            println("$itemToRemove Successfully Removed!")
+    fun removeFromCart_(cart: Cart_, itemToRemove: String) {
+        println("Removing ${itemToRemove.uppercase()}....")
+        var initialCartSize = cart.items.size
+        var found = true
+        cart.items.keys.removeIf { key -> key.name.uppercase() == itemToRemove.uppercase() }
 
-        }else {
-            println("$itemToRemove Not Found!")
+        if(cart.items.size != initialCartSize) {
+            println("${itemToRemove.uppercase()} successfully removed!")
+        }else{
+            println("${itemToRemove.uppercase()} not in cart")
         }
     }
 
     fun checkOutCart_(cart: Cart_) {
         var number = 1
+        var total = 0.0
         for (item in cart.items) {
             var eachItemCost = 0.0
             eachItemCost = item.key.price * item.value
-            println("Item $number: ${item.key.name} - Price: ${item.key.price} - QTY: ${item.value} = $eachItemCost")
+            total += eachItemCost
+            println("Item $number: ${item.key.name} - Unit Price: ${item.key.price} - QTY: ${item.value} = $eachItemCost")
             number++
         }
+        println("Total: $total")
     }
 }
 
 fun main() {
     var cart = Cart_()
-    val cart1 = Main()
-    cart1.addToCart_(cart, Shampoo("Palmolive", 4.0), 12.0)
-    cart1.addToCart_(cart, Fruit("Mango", 10.2), 5.0)
-    cart1.addToCart_(cart, Fruit("Apple", 10.0), 3.0)
-    cart1.addToCart_(cart, Fruit("Art", 10.0), 3.0)
-    cart1.removeFromCart_(cart, "Palmolive")
-    cart1.checkOutCart_(cart)
-    println("${cart.items.size}")
-    var map = hashMapOf<String, Int>()
-
-
-
+    val main = Main()
+    main.addToCart_(cart, Shampoo("Palmolive", 4.0), 12.0)
+    main.addToCart_(cart, Fruit("Mango", 10.2), 5.0)
+    main.addToCart_(cart, Fruit("Apple", 10.0), 4.0)
+    main.addToCart_(cart, Fruit("Art", 10.0), 3.0)
+    main.removeFromCart_(cart, "apple")
+    main.removeFromCart_(cart, "mango")
+    main.removeFromCart_(cart, "Sting")
+    main.checkOutCart_(cart)
 }
