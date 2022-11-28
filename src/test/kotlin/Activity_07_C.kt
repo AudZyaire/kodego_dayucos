@@ -9,7 +9,7 @@ import org.junit.jupiter.api.assertThrows
 //key = product (Name, Price)
 // value = quantity
 
-internal class CartTester {
+internal class Activity_07_C {
     //ADD ITEMS TO CART
     @Test
     fun addToCartLessZeroQuantity() {
