@@ -1,4 +1,4 @@
-package activity_05_D
+package activity_05_D_OOP
 
 //Coverage : OOP Inheritance, Encapsulation, Polymorphism, Abstraction
 //You are tasked to create a game.
