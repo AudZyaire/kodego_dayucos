@@ -1,5 +1,6 @@
 package activity_04_C
 
+import activity_05_C_OOP.Products
 import java.util.Date
 
 //Covered Topic(s) : Classes
@@ -25,60 +26,59 @@ import java.util.Date
 //
 //Identify the attributes for all the classes mentioned.
 
-class GroceryItems(var name: String = "", var price: Double = 0.0, var stocksLeft: Int = 0)
 
-class Poultry (name: String = "", price: Double = 0.0, stocksLeft: Int = 0) {
+class Poultry (name: String = "", price: Double = 0.0) : Products(name, price) {
     var harvestDate: Date = Date()
     var consumeBefore: Date = Date()
 }
-class Fish (name: String = "", price: Double = 0.0, stocksLeft: Int = 0) {
+class Fish (name: String = "", price: Double = 0.0) : Products(name, price) {
     var harvestDate: Date = Date()
     var consumeBefore: Date = Date()
 }
-class CannedGoods (name: String = "", price: Double = 0.0, stocksLeft: Int = 0) {
+class CannedGoods (name: String = "", price: Double = 0.0) : Products(name, price) {
     var brandName: String = ""
     var manufacturer: String = ""
     var manufacturingDate: Date = Date()
     var consumeBefore: Date = Date()
 }
-class Snacks (name: String = "", price: Double = 0.0, stocksLeft: Int = 0) {
+class Snacks (name: String = "", price: Double = 0.0) : Products(name, price) {
     var brandName: String = ""
     var manufacturer: String = ""
     var manufacturingDate: Date = Date()
     var consumeBefore: Date = Date()
 }
-class FrozenProducts (name: String = "", price: Double = 0.0, stocksLeft: Int = 0) {
-    var brandName: String = ""
-    var manufacturer: String = ""
-    var manufacturingDate: Date = Date()
-    var consumeBefore: Date = Date()
-}
-
-class Fruits (name: String = "", price: Double = 0.0, stocksLeft: Int = 0) {
-    var harvestDate: Date = Date()
-    var consumeBefore: Date = Date()
-}
-
-class Vegetables (name: String = "", price: Double = 0.0, stocksLeft: Int = 0) {
-    var harvestDate: Date = Date()
-    var consumeBefore: Date = Date()
-}
-
-class Condiments (name: String = "", price: Double = 0.0, stocksLeft: Int = 0) {
+class FrozenProducts (name: String = "", price: Double = 0.0) : Products(name, price) {
     var brandName: String = ""
     var manufacturer: String = ""
     var manufacturingDate: Date = Date()
     var consumeBefore: Date = Date()
 }
 
-class Furniture (name: String = "", price: Double = 0.0, stocksLeft: Int = 0) {
+class Fruits (name: String = "", price: Double = 0.0) : Products(name, price) {
+    var harvestDate: Date = Date()
+    var consumeBefore: Date = Date()
+}
+
+class Vegetables (name: String = "", price: Double = 0.0) : Products(name, price) {
+    var harvestDate: Date = Date()
+    var consumeBefore: Date = Date()
+}
+
+class Condiments (name: String = "", price: Double = 0.0) : Products(name, price) {
+    var brandName: String = ""
+    var manufacturer: String = ""
+    var manufacturingDate: Date = Date()
+    var consumeBefore: Date = Date()
+}
+
+class Furniture (name: String = "", price: Double = 0.0) : Products(name, price) {
     var brandName: String = ""
     var manufacturer: String = ""
     var manufacturingDate: Date = Date()
     var materialUsed: String = ""
 }
 
-class Appliances (name: String = "", price: Double = 0.0, stocksLeft: Int = 0) {
+class Appliances (name: String = "", price: Double = 0.0) : Products(name, price) {
     var brandName: String = ""
     var manufacturer: String = ""
     var manufacturingDate: Date = Date()
@@ -86,21 +86,21 @@ class Appliances (name: String = "", price: Double = 0.0, stocksLeft: Int = 0) {
     var voltage: Int = 0
 }
 
-class Clothes (name: String = "", price: Double = 0.0, stocksLeft: Int = 0) {
+class Clothes (name: String = "", price: Double = 0.0) : Products(name, price) {
     var brandName: String = ""
     var manufacturer: String = ""
     var manufacturingDate: Date = Date()
     var materialUsed: String = ""
 }
 
-class PetItems (name: String = "", price: Double = 0.0, stocksLeft: Int = 0) {
+class PetItems (name: String = "", price: Double = 0.0) : Products(name, price) {
     var brandName: String = ""
     var manufacturer: String = ""
     var manufacturingDate: Date = Date()
     var forWhatPet: String = ""
 }
 
-class SanitaryProducts (name: String = "", price: Double = 0.0, stocksLeft: Int = 0) {
+class SanitaryProducts (name: String = "", price: Double = 0.0) : Products(name, price) {
     var brandName: String = ""
     var manufacturer: String = ""
     var manufacturingDate: Date = Date()
@@ -108,7 +108,7 @@ class SanitaryProducts (name: String = "", price: Double = 0.0, stocksLeft: Int 
 
 }
 
-class PersonalCare (name: String = "", price: Double = 0.0, stocksLeft: Int = 0) {
+class PersonalCare (name: String = "", price: Double = 0.0) : Products(name, price) {
     var brandName: String = ""
     var manufacturer: String = ""
     var manufacturingDate: Date = Date()
@@ -116,7 +116,7 @@ class PersonalCare (name: String = "", price: Double = 0.0, stocksLeft: Int = 0)
 
 }
 
-class Liquor (name: String = "", price: Double = 0.0, stocksLeft: Int = 0) {
+class Liquor (name: String = "", price: Double = 0.0) : Products(name, price) {
     var brandName: String = ""
     var manufacturer: String = ""
     var typeOfLiquor: String = ""
@@ -125,7 +125,7 @@ class Liquor (name: String = "", price: Double = 0.0, stocksLeft: Int = 0) {
 
 }
 
-class BabyProducts (name: String = "", price: Double = 0.0, stocksLeft: Int = 0) {
+class BabyProducts (name: String = "", price: Double = 0.0, stocksLeft: Int = 0) : Products(name, price) {
     var brandName: String = ""
     var manufacturer: String = ""
     var manufacturingDate: Date = Date()
@@ -134,21 +134,21 @@ class BabyProducts (name: String = "", price: Double = 0.0, stocksLeft: Int = 0)
 
 }
 
-class RainProtection (name: String = "", price: Double = 0.0, stocksLeft: Int = 0) {
+class RainProtection (name: String = "", price: Double = 0.0, stocksLeft: Int = 0) : Products(name, price) {
     var brandName: String = ""
     var manufacturer: String = ""
     var manufacturingDate: Date = Date()
 
 }
 
-class Sunglasses (name: String = "", price: Double = 0.0, stocksLeft: Int = 0) {
+class Sunglasses (name: String = "", price: Double = 0.0, stocksLeft: Int = 0) : Products(name, price) {
     var brandName: String = ""
     var manufacturer: String = ""
     var manufacturingDate: Date = Date()
 
 }
 
-class CookingWares (name: String = "", price: Double = 0.0, stocksLeft: Int = 0) {
+class CookingWares (name: String = "", price: Double = 0.0, stocksLeft: Int = 0) : Products(name, price) {
     var brandName: String = ""
     var manufacturer: String = ""
     var manufacturingDate: Date = Date()

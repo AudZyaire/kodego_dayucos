@@ -1,5 +1,7 @@
 package activity_06_C
 
+import activity_04_C.Fruits
+import activity_04_C.Poultry
 import activity_05_C_OOP.*
 
 //When a customer checks out an item, identify the possible scenarios where a cart can not be checked out properly.
@@ -17,10 +19,10 @@ import activity_05_C_OOP.*
 fun main() {
     var cart1 = Cart_()
     var main1 = Main()
-    main1.addToCart_(cart1, Shampoo("Palmolive", 2.0), 3.0)
-//    main1.addToCart_(cart1, Fruit("Mango", 10.2), 5.0)
-//    main1.addToCart_(cart1, Fruit("Apple", 10.0), 4.0)
-//    main1.addToCart_(cart1, Fruit("Banana", 2.0), 3.0)
+    main1.addToCart_(cart1, Poultry("Egg", 2.0), 3.0)
+    main1.addToCart_(cart1, Fruits("Mango", 10.2), 5.0)
+    main1.addToCart_(cart1, Fruits("Apple", 10.0), 4.0)
+    main1.addToCart_(cart1, Fruits("Banana", 2.0), 3.0)
 
 //    checkOutExceptions(cart1)
 }

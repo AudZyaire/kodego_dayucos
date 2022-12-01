@@ -1,4 +1,6 @@
 package activity_05_C_OOP
+
+import activity_04_C.*
 import activity_06_C.addToCartExceptions
 import activity_06_C.checkOutExceptions
 
@@ -15,12 +17,6 @@ open class Products {
 
 }
 
-class Shampoo(name: String, price: Double) : Products(name, price)
-class PowderedMilk(name: String, price: Double) : Products(name, price)
-class Fruit(name: String, price: Double) : Products(name, price)
-class Deodorant(name: String, price: Double) : Products(name, price)
-class BottledWater(name: String, price: Double) : Products(name, price)
-
 //2. Create a cart to store the groceries.
 class Cart_ {
     var items: HashMap<Products, Double> = hashMapOf()
@@ -34,7 +30,7 @@ class Cart_ {
 class Main {
 
     fun addToCart_(cart: Cart_, item: Products, quantity: Double): String {
-        addToCartExceptions(item,quantity)
+        addToCartExceptions(item, quantity)
 
         cart.items.put(item, quantity)
         return "Add to Cart Success"
@@ -47,14 +43,14 @@ class Main {
         var found = true
         cart.items.keys.removeIf { key -> key.name.uppercase() == itemToRemove.uppercase() }
 
-        if(cart.items.size != initialCartSize) {
+        if (cart.items.size != initialCartSize) {
             println("${itemToRemove.uppercase()} successfully removed!")
-        }else{
+        } else {
             println("${itemToRemove.uppercase()} not in cart")
         }
     }
 
-    fun checkOutCart_(cart: Cart_):String {
+    fun checkOutCart_(cart: Cart_): String {
         checkOutExceptions(cart)
         var number = 1
         var total = 0.0
@@ -73,10 +69,11 @@ class Main {
 fun main() {
     var cart = Cart_()
     val main = Main()
-    main.addToCart_(cart, Shampoo("Palmolive", 4.0), 12.0)
-    main.addToCart_(cart, Fruit("Mango", 10.2), 5.0)
-    main.addToCart_(cart, Fruit("Apple", 10.0), 4.0)
-    main.addToCart_(cart, Fruit("Art", 10.0), 3.0)
+    main.addToCart_(cart, Liquor("Red Horse", 4.0), 12.0)
+    main.addToCart_(cart, Fruits("Mango", 10.2), 5.0)
+    main.addToCart_(cart, Fruits("Apple", 10.0), 4.0)
+    main.addToCart_(cart, Fruits("Art", 10.0), 3.0)
+    main.addToCart_(cart, Poultry("Egg", 5.0), 50.0)
     main.removeFromCart_(cart, "apple")
     main.removeFromCart_(cart, "mango")
     main.removeFromCart_(cart, "Sting")

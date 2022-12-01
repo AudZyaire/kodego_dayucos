@@ -1,11 +1,11 @@
+import activity_04_C.Fruits
 import activity_05_C_OOP.Cart_
-import activity_05_C_OOP.Fruit
 import activity_05_C_OOP.Main
 import activity_06_C.*
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.assertThrows
 import kotlin.test.assertEquals
-import kotlin.test.assertNull
+
 
 //Create the unit test for adding items in the Cart as well as checking out the items in cart.
 //key = product (Name, Price)
@@ -17,28 +17,28 @@ internal class Activity_07_C {
     fun addToCartLessZeroQuantity() {
         val main: Main = Main()
         var cart = Cart_()
-        assertThrows<InvalidProductQuantityException> { main.addToCart_(cart, Fruit("Mango", 2.2), -2.5) }
+        assertThrows<InvalidProductQuantityException> { main.addToCart_(cart, Fruits("Mango", 2.2), -2.5) }
     }
 
     @Test
     fun addToCartLessZeroPrice() {
         val main: Main = Main()
         var cart = Cart_()
-        assertThrows<InvalidProductPriceException> { main.addToCart_(cart, Fruit("Mango", 0.0), 2.5) }
+        assertThrows<InvalidProductPriceException> { main.addToCart_(cart, Fruits("Mango", 0.0), 2.5) }
     }
 
     @Test
     fun addToCartEmptyProductName() {
         val main: Main = Main()
         var cart = Cart_()
-        assertThrows<InvalidProductNameException> { main.addToCart_(cart, Fruit("", 10.0), 2.5) }
+        assertThrows<InvalidProductNameException> { main.addToCart_(cart, Fruits("", 10.0), 2.5) }
     }
 
     @Test
     fun addItemsToCartSuccess() {
         val main: Main = Main()
         var cart = Cart_()
-        assertEquals("Add to Cart Success", main.addToCart_(cart, Fruit("Mango", 10.0), 2.5))
+        assertEquals("Add to Cart Success", main.addToCart_(cart, Fruits("Mango", 10.0), 2.5))
     }
 
 
@@ -47,7 +47,7 @@ internal class Activity_07_C {
     fun checkOutProductQuantityLessZero() {
         val main: Main = Main()
         var cart = Cart_()
-        cart.items.put(Fruit("Mango", 2.2), -1.0)
+        cart.items.put(Fruits("Mango", 2.2), -1.0)
         assertThrows<InvalidProductQuantityException> { main.checkOutCart_(cart) }
     }
 
@@ -55,7 +55,7 @@ internal class Activity_07_C {
     fun checkOutProductPriceLessZero() {
         val main: Main = Main()
         var cart = Cart_()
-        cart.items.put(Fruit("Mango", -5.3), 2.0)
+        cart.items.put(Fruits("Mango", -5.3), 2.0)
         assertThrows<InvalidProductPriceException> { main.checkOutCart_(cart) }
     }
 
@@ -63,7 +63,7 @@ internal class Activity_07_C {
     fun checkOutProductNameEmpty() {
         val main: Main = Main()
         var cart = Cart_()
-        cart.items.put(Fruit("", 2.3), 2.0)
+        cart.items.put(Fruits("", 2.3), 2.0)
         assertThrows<InvalidProductNameException> { main.checkOutCart_(cart) }
     }
 
@@ -78,7 +78,7 @@ internal class Activity_07_C {
     fun checkOutCartSuccess() {
         val main: Main = Main()
         var cart = Cart_()
-        cart.items.put(Fruit("Mango", 2.3), 2.0)
+        cart.items.put(Fruits("Mango", 2.3), 2.0)
         assertEquals("Check Out Success", main.checkOutCart_(cart))
     }
 
