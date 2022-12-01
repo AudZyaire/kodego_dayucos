@@ -52,6 +52,10 @@ class Position {
 
 class Dice {
     var sides = 6
+
+    fun rollDice() {
+
+    }
 }
 
 fun main() {
