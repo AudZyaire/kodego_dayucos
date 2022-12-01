@@ -1,6 +1,4 @@
-package exercise_oop_FromSir
-
-import java.lang.NumberFormatException
+package exercise_OOP
 
 fun main() {
     var customer1 = Customer("Lyle", "Brook", "Cebu", "0999992222")
