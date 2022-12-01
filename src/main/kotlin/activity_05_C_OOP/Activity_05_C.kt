@@ -33,10 +33,11 @@ class Cart_ {
 //c - check out cart > compute the total cost of the cart.
 class Main {
 
-    fun addToCart_(cart: Cart_, item: Products, quantity: Double) {
+    fun addToCart_(cart: Cart_, item: Products, quantity: Double): String {
         addToCartExceptions(item,quantity)
 
         cart.items.put(item, quantity)
+        return "Add to Cart Success"
     }
 
 
@@ -53,7 +54,7 @@ class Main {
         }
     }
 
-    fun checkOutCart_(cart: Cart_) {
+    fun checkOutCart_(cart: Cart_):String {
         checkOutExceptions(cart)
         var number = 1
         var total = 0.0
@@ -65,6 +66,7 @@ class Main {
             number++
         }
         println("Total: $total")
+        return "Check Out Success"
     }
 }
 

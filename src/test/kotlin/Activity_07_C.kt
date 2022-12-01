@@ -4,6 +4,8 @@ import activity_05_C_OOP.Main
 import activity_06_C.*
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.assertThrows
+import kotlin.test.assertEquals
+import kotlin.test.assertNull
 
 //Create the unit test for adding items in the Cart as well as checking out the items in cart.
 //key = product (Name, Price)
@@ -15,21 +17,28 @@ internal class Activity_07_C {
     fun addToCartLessZeroQuantity() {
         val main: Main = Main()
         var cart = Cart_()
-        assertThrows<InvalidProductQuantityException> { main.addToCart_(cart,Fruit("Mango", 2.2), -2.5) }
+        assertThrows<InvalidProductQuantityException> { main.addToCart_(cart, Fruit("Mango", 2.2), -2.5) }
     }
 
     @Test
     fun addToCartLessZeroPrice() {
         val main: Main = Main()
         var cart = Cart_()
-        assertThrows<InvalidProductPriceException> { main.addToCart_(cart,Fruit("Mango", 0.0), 2.5) }
+        assertThrows<InvalidProductPriceException> { main.addToCart_(cart, Fruit("Mango", 0.0), 2.5) }
     }
 
     @Test
     fun addToCartEmptyProductName() {
         val main: Main = Main()
         var cart = Cart_()
-        assertThrows<InvalidProductNameException> { main.addToCart_(cart,Fruit("", 10.0), 2.5) }
+        assertThrows<InvalidProductNameException> { main.addToCart_(cart, Fruit("", 10.0), 2.5) }
+    }
+
+    @Test
+    fun addItemsToCartSuccess() {
+        val main: Main = Main()
+        var cart = Cart_()
+        assertEquals("Add to Cart Success", main.addToCart_(cart, Fruit("Mango", 10.0), 2.5))
     }
 
 
@@ -63,6 +72,14 @@ internal class Activity_07_C {
         val main: Main = Main()
         var cart = Cart_()
         assertThrows<EmptyCartException> { main.checkOutCart_(cart) }
+    }
+
+    @Test
+    fun checkOutCartSuccess() {
+        val main: Main = Main()
+        var cart = Cart_()
+        cart.items.put(Fruit("Mango", 2.3), 2.0)
+        assertEquals("Check Out Success", main.checkOutCart_(cart))
     }
 
 
