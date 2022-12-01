@@ -9,8 +9,26 @@ package activity_05_D_OOP
 //You will need snakes, ladders and players.
 //Use all OOP concepts.
 
-class Board {
-    var tiles = arrayListOf<Position>()
+interface Board {
+    var tiles: Int
+
+    fun resetBoard()
+    fun newGame()
+    fun RandomizeStartEndLaddersSnakes()
+}
+
+class SnakeAndLadderBoard(override var tiles: Int = 10 ) : Board {
+    override fun resetBoard() {
+        TODO("Not yet implemented")
+    }
+
+    override fun newGame() {
+        TODO("Not yet implemented")
+    }
+
+    override fun RandomizeStartEndLaddersSnakes() {
+        TODO("Not yet implemented")
+    }
 }
 
 open class GameObject(var start: Position = Position(), var end: Position = Position())
@@ -34,4 +52,8 @@ class Position {
 
 class Dice {
     var sides = 6
+}
+
+fun main() {
+    var board1= SnakeAndLadderBoard(100)
 }
