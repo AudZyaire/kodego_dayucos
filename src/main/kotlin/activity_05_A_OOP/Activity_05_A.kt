@@ -1,8 +1,7 @@
 package activity_05_A_OOP
 
 import activity_06_A.checkGrades
-import java.lang.Exception
-import java.util.*
+import java.util.Date
 import kotlin.collections.ArrayList
 
 fun main() {
