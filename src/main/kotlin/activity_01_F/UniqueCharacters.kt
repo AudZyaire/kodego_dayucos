@@ -16,11 +16,11 @@ fun main() {
     logger.info { "Input second string: " }
     var string2 = readln()
     var concatenated = string1 + string2
-    var unique : LinkedHashSet<Char> = LinkedHashSet()
+    var unique : String = ""
 
     for(char in concatenated)
-        unique.add(char)
+        if(!unique.contains(char))
+            unique += char
 
-    for (char in unique)
-        print(char)
+    logger.info { "Unique: $unique" }
 }
